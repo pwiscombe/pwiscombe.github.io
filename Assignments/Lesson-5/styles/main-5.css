@@ -1,0 +1,156 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* {
+    box-sizing: border-box;
+}
+
+/* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 14px;
+    font-family: 'Open Sans';
+}
+
+header,
+nav,
+main,
+footer {
+    /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+    max-width: 37.5em;
+    /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+}
+
+header {
+    background: #2255aa;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    color: #bbcccc;
+    padding: .5em;
+}
+
+header h1 {
+    font-size: 2.0em;
+    text-shadow: 2px 2px 2px #444;
+}
+
+header img {
+    float: left;
+    height: 4em;
+}
+
+header .subheading {
+
+    font-size: 1.0em;
+}
+
+nav {
+    display: none;
+    background: #669944;
+    font-family: 'Montserrat';
+    font-size: 1em;
+    text-align: center;
+}
+
+nav li + li:before {
+    content: " | ";
+    padding: 0 10px;
+}
+
+nav button {}
+
+nav ul {}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {}
+
+nav ul li.active a {}
+
+nav ul li a:hover {}
+
+main {
+    text-align: center;
+}
+
+main h2 {
+    font-family: 'Open Sans';
+    font-size: 1.5em;
+}
+
+main figure {
+    margin: 0 0 .2rem 2%;
+    width: 96%;
+}
+
+main picture img {
+    max-width: 100%;
+    height: auto;
+    padding: .5em
+}
+
+div.current {
+    float: left;
+    position: relative;
+    top: 50px;
+}
+
+section.weather-summary {
+    margin: auto;
+    width: 15em;
+}
+
+section.weather-summary figure img {
+    float: right;
+    width: 100px;
+
+}
+
+div.highlow {
+    clear: both;
+}
+
+p.high {
+    float: left;
+
+}
+
+p.low {
+    float: right;
+}
+
+div.conditions {
+    clear: both;
+}
+
+section.forecast {
+    display: none;
+}
+
+section.forecast table,
+th,
+td {
+    margin: auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+main article p {
+    text-align: justify;
+    padding: 1em;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+    padding: 1em;
+}
+
+footer {
+    font-family: Montserrat;
+    background-color: #5599bb;
+    padding: .5em;
+    text-align: center;
+}
