@@ -136,7 +136,10 @@ td {
     border: 1px solid black;
     border-collapse: collapse;
 }
-
+article h3 {
+    position: relative;
+    top: 2em;
+}
 main article p {
     text-align: justify;
     padding: 1em;
