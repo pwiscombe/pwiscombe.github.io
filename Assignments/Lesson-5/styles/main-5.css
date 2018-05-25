@@ -54,7 +54,7 @@ nav {
 
 nav li + li:before {
     content: " | ";
-    padding: 0 10px;
+    padding: 0 1em;
 }
 
 nav button {}
