@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Franklin</title>
+    <meta name="description" content="Franklin Weather Page">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main-6.css">
+    <link rel="stylesheet" href="styles/medium-6.css">
+    <link rel="stylesheet" href="styles/large-6.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="images/tcw.png" alt="logo">
+        <h1>Tri-City Weather</h1>
+        <p class="subheading">Because Looking Outside Takes Too Long!</p>
+    </header>
+
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Franklin</a></li>
+            <li><a href="#">Greenville</a></li>
+            <li><a href="#">Springfield</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main class="clearfix">
+        <div class="weather">
+            <div class="city">
+                <h2>Franklin</h2>
+                <picture class="city_pic">
+                    <img src="images/franklin320.jpg" alt="franklin" sizes="(max-width: 37.5em) 100vw, 50vw"
+                         srcset="images/franklin320.jpg 320w,
+                                 images/franklin640.jpg 640w,
+                                 images/franklin800.jpg 800w
+                                 ">
+                </picture>
+            </div>
+            <section class="weather-summary">
+                <div class="centering">
+                    <h3>Weather Summary</h3>
+                    <div class="current">Sunny</div>
+                    <figure>
+                        <img src="images/current_icon.png" alt="Current">
+                    </figure>
+                    <div class="highlow">
+                        <p class="high">High: 90&deg;F</p>
+                        <p class="low">Low: 66&deg;F</p>
+                    </div>
+                    <div class="conditions">
+                        <p>Chance Precipitation: 0%</p>
+                        <p>Wind Speed: 5mph SW</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="forecast">
+                <h3>Ten Day Forecast</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day 1</th>
+                            <th>Day 2</th>
+                            <th>Day 3</th>
+                            <th>Day 4</th>
+                            <th>Day 5</th>
+                            <th>Day 6</th>
+                            <th>Day 7</th>
+                            <th>Day 8</th>
+                            <th>Day 9</th>
+                            <th>Day 10</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>89&deg;F</td>
+                            <td>87&deg;F</td>
+                            <td>78&deg;F</td>
+                            <td>75&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>79&deg;F</td>
+                            <td>83&deg;F</td>
+                            <td>85&deg;F</td>
+                            <td>89&deg;F</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+        <div class="news">
+            <article>
+                <h3>Franklin Breaks Record</h3>
+                <p class="town-article">
+                    Excepteur ne consequat, arbitror exercitation iis vidisse a fabulas ubi doctrina, est eram offendit relinqueret. Lorem proident fidelissimae ne ullamco o amet, ad si malis laboris, excepteur ut elit sed possumus sed fugiat, ab ut coniunctione non sunt expetendis fabulas do do labore possumus. Cupidatat ita ipsum. Multos a admodum an fugiat ab voluptate nisi varias singulis velit sed incididunt quis do voluptate illustriora, quis singulis an arbitror quo est elit nulla ubi laborum, iudicem irure sed eiusmod familiaritatem si consequat veniam laborum te expetendis quo arbitror. Tempor culpa laboris litteris ea elit occaecat ubi instituendarum in o aut dolore cernantur o se offendit de deserunt. Minim praetermissum ullamco minim occaecat quo an a quid doctrina iis an minim deserunt voluptatibus, legam expetendis adipisicing.
+                </p>
+            </article>
+            <img src="http://loremflickr.com/800/600/city/" alt="rand_pic">
+        </div>
+    </main>
+
+    <footer>
+        <div class="contact">
+            Contact information placeholder<br> 999.999.9999
+            <br> 123 Main St. Anytown, US 99999<br> Google Map
+        </div>
+        <div class="footer-bar">&copy;2018 | All Rights Reserved | Tri-Cities Weather | <span id="currentdate"> 5 May 2018</span>
+        </div>
+    </footer>
+
+</body>>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+</html>

@@ -1,0 +1,77 @@
+@media only screen and (min-width: 37.5em) {
+
+    /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
+
+
+    header,
+    nav,
+    main,
+    footer {
+        /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+        max-width: 64em;
+        /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+    }
+    /* hamburger button does not need to be shown in the medium on up views */
+
+
+    nav button {
+        display: none;
+    }
+
+    nav ul.hide {display: block;}
+
+    nav ul li{
+        float: left;
+    }
+
+    nav ul li a{
+        border: none;
+        border-right: 1px solid rgba (0,0,0,0.3);
+        padding: .8rem 1rem;
+    }
+    picture.city_pic {
+     /*   max-width: 50%; */
+        float: left;
+    }
+
+    section.weather-summary {
+        float: right;
+        position: relative;
+        right: 12.5%;
+    }
+
+    h3 {
+        clear: both;
+    }
+
+    div.current {
+        float: left;
+        position: relative;
+        top: 75px;
+    }
+
+    section.weather-summary figure img {
+        width: 150px;
+    }
+
+    section.forecast {
+        clear: both;
+        display: block;
+    }
+
+    main article p {
+        width:50%;
+        float:left;
+    }
+
+    main div.news img {
+        float:right;
+        position:relative;
+        top: 1em;
+        max-width: 50%
+    }
+
+    footer {
+        clear: both;
+    }
+}
