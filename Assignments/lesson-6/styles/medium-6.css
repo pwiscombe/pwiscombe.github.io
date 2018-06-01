@@ -1,8 +1,6 @@
 @media only screen and (min-width: 37.5em) {
 
     /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
-
-
     header,
     nav,
     main,
@@ -12,26 +10,25 @@
         /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
     }
     /* hamburger button does not need to be shown in the medium on up views */
-
-
     nav button {
         display: none;
     }
 
-    nav ul.hide {display: block;}
+    nav ul.hide {
+        display: block;
+    }
 
-    nav ul li{
+    nav ul li {
         float: left;
     }
 
-    nav ul li a{
+    nav ul li a {
         border: none;
-        border-right: 1px solid rgba (0,0,0,0.3);
+        border-right: 1px solid rgba (0, 0, 0, 0.3);
         padding: .8rem 1rem;
     }
 
-    picture.city_pic {
-        clear: both;
+    main picture.city_pic img {
         max-width: 50%;
         float: left;
     }
@@ -61,16 +58,19 @@
         display: block;
     }
 
+
     main article p {
-        width:50%;
-        float:left;
+        width: 50%;
+        float: left;
     }
 
     main div.news img {
-        float:right;
-        position:relative;
+
+        float: right;
+        position: relative;
         top: 1em;
-        max-width: 50%
+        max-width: 50%;
+        padding-bottom: 1em;
     }
 
     footer {

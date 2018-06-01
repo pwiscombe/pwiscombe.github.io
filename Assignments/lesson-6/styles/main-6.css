@@ -98,6 +98,7 @@ main h2 {
     font-size: 1.5em;
 }
 
+
 main figure {
     margin: 0 0 .2rem 2%;
     width: 96%;
@@ -157,13 +158,14 @@ main article p {
     padding: 1em;
 }
 
-main img {
+main picture.news_pic {
     max-width: 100%;
     height: auto;
     padding: 1em;
 }
 
 footer {
+    clear:both;
     font-family: Montserrat;
     background-color: #5599bb;
     padding: .5em;
