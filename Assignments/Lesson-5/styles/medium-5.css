@@ -17,7 +17,7 @@
         /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
     }
     /* hamburger button does not need to be shown in the medium on up views */
-    picture.city_pic {
+   picture.city_pic {
         max-width: 50%;
         float: left;
     }

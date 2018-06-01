@@ -86,8 +86,8 @@ main figure {
 }
 
 main picture img {
-    max-width: 100%;
-    height: auto;
+    /*max-width: 100%;
+    height: auto;*/
     padding: .5em
 }
 
@@ -145,10 +145,10 @@ main article p {
     padding: 1em;
 }
 
-main img {
+/* main img {
     max-width: 100%;
     height: auto;
-    padding: 1em;
+    padding: 1em;*/
 }
 
 footer {
