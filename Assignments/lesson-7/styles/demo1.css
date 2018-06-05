@@ -1,0 +1,24 @@
+header {
+    background: #2255aa;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    color: #bbcccc;
+    padding: .5em;
+    display: flex;
+    flex-direction: row;
+    flex-basis: auto;
+    align-items:flex-start;
+}
+.logo {
+    width: 4em;
+    height: auto;
+}
+
+.heading {
+    width:500px;
+    text-align: center;
+
+
+
+}

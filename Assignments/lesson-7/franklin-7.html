@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Franklin</title>
+    <meta name="description" content="Franklin Weather Page">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main-7.css">
+    <link rel="stylesheet" href="styles/medium-7.css">
+    <link rel="stylesheet" href="styles/large-7.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+        <img src="images/tcw.png" alt="logo">
+        </div>
+        <div class = "heading">
+        <h1>Tri-City Weather</h1>
+        <p class="subheading">Because Looking Outside Takes Too Long!</p>
+        </div>
+    </header>
+
+    <nav>
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Franklin</a></li>
+            <li><a href="#">Greenville</a></li>
+            <li><a href="#">Springfield</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="city_weather">
+            <div class="city_name">
+                <h2>Franklin</h2>
+            </div>
+            <div class="weather">
+                <picture class="weather_pic">
+                    <img src="images/franklin320.jpg" alt="franklin" srcset="images/franklin320.jpg 320w,
+                                 images/franklin640.jpg 640w,
+                                 images/franklin800.jpg 800w
+                                 ">
+                </picture>
+            <section class="weather-summary">
+                    <h3>Weather Summary</h3>
+                    <div class="current">
+                    <div class="condition">
+                         Sunny
+                    </div>
+                    <figure class = "weather_icon">
+                        <img src="images/current_icon.png" alt="Current">
+                    </figure>
+                </div>
+                    <div class="highlow">
+                        <div class="high">High: 90&deg;F</div>
+                        <div class="low">Low: 66&deg;F</div>
+                    </div>
+                    <div class="precip_wind">
+                        <p>Chance Precipitation: 0%</p>
+                        <p>Wind Speed: 5mph SW</p>
+                    </div>
+            </section>
+            </div>
+            <section class="forecast">
+                <h3>Ten Day Forecast</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day 1</th>
+                            <th>Day 2</th>
+                            <th>Day 3</th>
+                            <th>Day 4</th>
+                            <th>Day 5</th>
+                            <th>Day 6</th>
+                            <th>Day 7</th>
+                            <th>Day 8</th>
+                            <th>Day 9</th>
+                            <th>Day 10</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>89&deg;F</td>
+                            <td>87&deg;F</td>
+                            <td>78&deg;F</td>
+                            <td>75&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>79&deg;F</td>
+                            <td>83&deg;F</td>
+                            <td>85&deg;F</td>
+                            <td>89&deg;F</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+        <div class="city_news">
+            <article>
+                <div class="story">
+                <h3>Franklin Breaks Record</h3>
+                <p class="city-article">
+                    Excepteur ne consequat, arbitror exercitation iis vidisse a fabulas ubi doctrina, est eram offendit relinqueret. Lorem proident fidelissimae ne ullamco o amet, ad si malis laboris, excepteur ut elit sed possumus sed fugiat, ab ut coniunctione non sunt expetendis fabulas do do labore possumus. Cupidatat ita ipsum. Multos a admodum an fugiat ab voluptate nisi varias singulis velit sed incididunt quis do voluptate illustriora, quis singulis an arbitror quo est elit nulla ubi laborum, iudicem irure sed eiusmod familiaritatem si consequat veniam laborum te expetendis quo arbitror. Tempor culpa laboris litteris ea elit occaecat ubi instituendarum in o aut dolore cernantur o se offendit de deserunt. Minim praetermissum ullamco minim occaecat quo an a quid doctrina iis an minim deserunt voluptatibus, legam expetendis adipisicing.
+                </p>
+                </div>
+            </article>
+            <picture class="news_pic">
+                <img src="images/franklin_news.jpg" alt="franklin_news" srcset="images/franklin_news_400.jpg 400w,
+                             images/franklin_news_800.jpg 800w,
+                             images/franklin_news_1200.jpg 1200w
+                             ">
+            </picture>
+        </div>
+    </main>
+
+    <footer>
+        <div class="contact">
+            Contact information placeholder<br> 999.999.9999
+            <br> 123 Main St. Anytown, US 99999<br> Google Map
+        </div>
+        <div class="footer-bar">&copy;2018 | All Rights Reserved | Tri-Cities Weather | <span id="datestring"></span>
+        </div>
+    </footer>
+
+</body>
+<script src="scripts/currentdate.js"></script>
+<script src="scripts/hamburger.js"></script>
+</html>
