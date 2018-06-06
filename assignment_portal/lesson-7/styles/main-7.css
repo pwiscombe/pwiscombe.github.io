@@ -116,6 +116,7 @@ figcaption {
     font-family: 'Open Sans';
     font-size: 1rem;
     font-weight: 600;
+    padding-top:.5rem;
 }
 
 section.weather-summary {
