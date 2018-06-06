@@ -16,6 +16,6 @@
         border-radius: 1rem;
     }
     .gallery_item:hover{
-        box-shadow: .5rem .5rem 2rem; gray;}
+        box-shadow: .5rem .5rem 2rem black;}
 
 }
