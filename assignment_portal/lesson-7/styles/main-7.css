@@ -31,7 +31,6 @@ header {
     flex-direction: row;
 }
 
-
 .logo {
     width: 4rem;
     height: 4rem;
@@ -47,6 +46,7 @@ header h1 {
 
 header .subheading {
     font-size: 1.0em;
+    text-align:center;
 }
 
 nav button{
