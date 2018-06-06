@@ -18,11 +18,11 @@
 
     <header>
         <div class="logo">
-        <img src="images/tcw.png" alt="logo">
+            <img src="images/tcw.png" alt="logo">
         </div>
-        <div class = "heading">
-        <h1>Tri-City Weather</h1>
-        <p class="subheading">Because Looking Outside Takes Too Long!</p>
+        <div class="heading">
+            <h1>Tri-City Weather</h1>
+            <p class="subheading">Because Looking Outside Takes Too Long!</p>
         </div>
     </header>
 
@@ -34,7 +34,7 @@
             <li><a href="#">Greenville</a></li>
             <li><a href="#">Springfield</a></li>
             <li><a href="#">Storm Center</a></li>
-            <li><a href="#">Gallery</a></li>
+            <li><a href="gallery-7.html">Gallery</a></li>
         </ul>
     </nav>
 
@@ -50,25 +50,31 @@
                                  images/franklin800.jpg 800w
                                  ">
                 </picture>
-            <section class="weather-summary">
+                <section class="weather-summary">
                     <h3>Weather Summary</h3>
                     <div class="current">
-                    <div class="condition">
-                         Sunny
+                        <div class="condition">
+                            Sunny
+                        </div>
+                        <figure class="weather_icon">
+                            <img src="images/current_icon.png" alt="Current">
+                        </figure>
                     </div>
-                    <figure class = "weather_icon">
-                        <img src="images/current_icon.png" alt="Current">
-                    </figure>
-                </div>
                     <div class="highlow">
-                        <div class="high">High: 90&deg;F</div>
-                        <div class="low">Low: 66&deg;F</div>
+                        <div class="high">High: 50&deg;F</div>
+                        <div class="low">Low: 37&deg;F</div>
+                    </div>
+                    <div class="windchill">
+                        <div class="highchill">
+                            <span id="high_feel"></span></div>
+                        <div class="lowchill">
+                            <span id="low_feel"></span></div>
                     </div>
                     <div class="precip_wind">
                         <p>Chance Precipitation: 0%</p>
-                        <p>Wind Speed: 5mph SW</p>
+                        <p>Wind Speed: 10mph SW</p>
                     </div>
-            </section>
+                </section>
             </div>
             <section class="forecast">
                 <h3>Ten Day Forecast</h3>
@@ -107,10 +113,10 @@
         <div class="city_news">
             <article>
                 <div class="story">
-                <h3>Franklin Breaks Record</h3>
-                <p class="city-article">
-                    Excepteur ne consequat, arbitror exercitation iis vidisse a fabulas ubi doctrina, est eram offendit relinqueret. Lorem proident fidelissimae ne ullamco o amet, ad si malis laboris, excepteur ut elit sed possumus sed fugiat, ab ut coniunctione non sunt expetendis fabulas do do labore possumus. Cupidatat ita ipsum. Multos a admodum an fugiat ab voluptate nisi varias singulis velit sed incididunt quis do voluptate illustriora, quis singulis an arbitror quo est elit nulla ubi laborum, iudicem irure sed eiusmod familiaritatem si consequat veniam laborum te expetendis quo arbitror. Tempor culpa laboris litteris ea elit occaecat ubi instituendarum in o aut dolore cernantur o se offendit de deserunt. Minim praetermissum ullamco minim occaecat quo an a quid doctrina iis an minim deserunt voluptatibus, legam expetendis adipisicing.
-                </p>
+                    <h3>Franklin Breaks Record</h3>
+                    <p class="city-article">
+                        Excepteur ne consequat, arbitror exercitation iis vidisse a fabulas ubi doctrina, est eram offendit relinqueret. Lorem proident fidelissimae ne ullamco o amet, ad si malis laboris, excepteur ut elit sed possumus sed fugiat, ab ut coniunctione non sunt expetendis fabulas do do labore possumus. Cupidatat ita ipsum. Multos a admodum an fugiat ab voluptate nisi varias singulis velit sed incididunt quis do voluptate illustriora, quis singulis an arbitror quo est elit nulla ubi laborum, iudicem irure sed eiusmod familiaritatem si consequat veniam laborum te expetendis quo arbitror. Tempor culpa laboris litteris ea elit occaecat ubi instituendarum in o aut dolore cernantur o se offendit de deserunt. Minim praetermissum ullamco minim occaecat quo an a quid doctrina iis an minim deserunt voluptatibus, legam expetendis adipisicing.
+                    </p>
                 </div>
             </article>
             <picture class="news_pic">
@@ -134,4 +140,6 @@
 </body>
 <script src="scripts/currentdate.js"></script>
 <script src="scripts/hamburger.js"></script>
+<script src="scripts/windchill.js"></script>
+
 </html>

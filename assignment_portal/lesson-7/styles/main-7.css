@@ -146,14 +146,20 @@ div.highlow {
     justify-content: center;
 }
 
-.high {
+.high,
+.highchill{
     margin-right:.5rem;
 
 }
 
-.low {
+.low,
+.lowchill{
     margin-left: .5rem;
 
+}
+div.windchill{
+    display:flex;
+    justify-content: center;
 }
 
 div.conditions {
@@ -186,6 +192,28 @@ main article p {
     height: auto;
     padding: 1em;
 
+}
+
+.gallery_grid {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns:auto;
+    padding: 2rem;
+}
+.gallery_item {
+    max-width:100%;
+    padding: 2em;
+
+}
+
+.gallery_item img, p {
+    max-width:100%;
+    min-width: 100%;
+    text-align:justify;
+}
+.gallery_item img{
+    border-radius: 1rem;
+    box-shadow: .25rem .25rem 1rem; black;
 }
 
 footer {

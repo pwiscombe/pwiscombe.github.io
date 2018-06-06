@@ -20,39 +20,31 @@
 
     }
 
-    nav ul li {
-
-    }
+    nav ul li {}
 
     nav ul li a {
         border: none;
         border-right: 1px solid rgba (0, 0, 0, 0.3);
         padding: .8rem 1rem;
     }
-    .weather{
+    .weather {
         display: flex;
-
-
     }
     .weather_pic img {
         max-width: 50vw;
     }
 
     section.weather-summary {
-        margin:auto;
+        margin: auto;
 
 
 
 
     }
 
-    h3 {
+    h3 {}
 
-    }
-
-    div.current {
-
-    }
+    div.current {}
 
     section.weather-summary figure img {
         width: 100px;
@@ -63,23 +55,23 @@
         display: block;
     }
 
-    .city_news{
+    .city_news {
         display: flex;
     }
-    article {
-
-    }
-    .story h3{
+    article {}
+    .story h3 {
         text-align: center;
     }
 
- .news_pic img{
+    .news_pic img {
 
-     width:50vw;
-
-    }
-
-    footer {
+        width: 50vw;
 
     }
+
+    .gallery_grid{
+        grid-template-columns: auto auto;
+    }
+
+    footer {}
 }
