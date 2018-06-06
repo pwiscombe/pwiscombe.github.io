@@ -154,6 +154,7 @@ section.weather-summary figure {
 
 div.highlow {
     display: flex;
+    align-content: center;
     justify-content: center;
 
 }
