@@ -6,7 +6,6 @@
 
 /* This wildcard applies to all elements ensuring a box layout model */
 
-
 body {
     font-size: 14px;
     font-family: 'Open Sans';
@@ -16,7 +15,7 @@ header,
 nav,
 main,
 footer {
-   max-width: 37.5em;
+    max-width: 37.5em;
     /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
 }
 
@@ -35,8 +34,9 @@ header {
     width: 4rem;
     height: 4rem;
 }
-.heading{
- width: 100vw
+
+.heading {
+    width: 100vw
 }
 
 header h1 {
@@ -46,10 +46,10 @@ header h1 {
 
 header .subheading {
     font-size: 1.0em;
-    text-align:center;
+    text-align: center;
 }
 
-nav button{
+nav button {
     margin: .2rem 2%;
     background-color: transparent;
     border: none;
@@ -91,11 +91,11 @@ nav ul li a:hover {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-nav ul.hide {display: none;}
-
-main {
-
+nav ul.hide {
+    display: none;
 }
+
+main {}
 
 main h2 {
     text-align: center;
@@ -104,67 +104,75 @@ main h2 {
 }
 
 
-main {
-}
+main {}
 
 figure {
     margin: 0 0 .2rem 2%;
     width: 96%;
 }
 
+figcaption {
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size: 1rem;
+    font-weight: 600;
+}
 
 section.weather-summary {
-text-align:center;
+    text-align: center;
 }
-.current{
-    display:flex;
-    align-items:center;
+
+.current {
+    display: flex;
+    align-items: center;
 
 
 }
-.condition{
-    width:50%;
-    text-align:right;
+
+.condition {
+    width: 50%;
+    text-align: right;
 
 }
+
 .weather_pic img {
     max-width: 100%;
     padding: .5rem;
 }
 
-section.weather-summary figure{
-    width:50%;
+section.weather-summary figure {
+    width: 50%;
 
-    text-align:left
+    text-align: left
 }
-.weather_icon img{
+
+.weather_icon img {
     width: 75px;
 }
 
 div.highlow {
-    display:flex;
+    display: flex;
     justify-content: center;
 }
 
 .high,
-.highchill{
-    margin-right:.5rem;
+.highchill {
+    margin-right: .5rem;
 
 }
 
 .low,
-.lowchill{
+.lowchill {
     margin-left: .5rem;
 
 }
-div.windchill{
-    display:flex;
+
+div.windchill {
+    display: flex;
     justify-content: center;
 }
 
-div.conditions {
-
-}
+div.conditions {}
 
 section.forecast {
     display: none;
@@ -178,11 +186,13 @@ td {
     border: 1px solid black;
     border-collapse: collapse;
 }
+
 article h3 {
     position: relative;
     margin-left: 1rem;
 
 }
+
 main article p {
     text-align: justify;
 }
@@ -197,21 +207,19 @@ main article p {
 .gallery_grid {
     display: grid;
     grid-gap: 2rem;
-    grid-template-columns:auto;
+    grid-template-columns: auto;
     padding: 2rem;
 }
+
 .gallery_item {
-    max-width:100%;
+    min-width: 100%;
     padding: 2em;
 
 }
 
-.gallery_item img, p {
-    max-width:100%;
+.gallery_item img {
+    max-width: 100%;
     min-width: 100%;
-    text-align:justify;
-}
-.gallery_item img{
     border-radius: 1rem;
     box-shadow: .25rem .25rem 1rem black;
 }
@@ -223,5 +231,3 @@ footer {
     padding: .5em;
     text-align: center;
 }
-
-
