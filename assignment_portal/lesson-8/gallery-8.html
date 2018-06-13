@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Gallery</title>
+    <meta name="description" content="Gallery">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main-8.css">
+    <link rel="stylesheet" href="styles/medium-8.css">
+    <link rel="stylesheet" href="styles/large-8.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/tcw.png" alt="logo">
+        </div>
+        <div class="heading">
+            <h1>Tri-City Weather</h1>
+            <p class="subheading">Because Looking Outside Takes Too Long!</p>
+        </div>
+    </header>
+
+    <nav>
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li><a href="franklin-8.html">Franklin</a></li>
+            <li><a href="#">Greenville</a></li>
+            <li><a href="#">Springfield</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li class="active"><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="gallery_grid">
+            <div class="gallery_item">
+                <figure><a href="images/gallery/fog.jpg" target="_blank">
+                    <img src="images/gallery/fog.jpg" alt="fog" srcset="
+                    images/gallery/fog400.jpg 400w,
+                    images/gallery/fog800.jpg 800w,
+                    images/gallery/fog1200.jpg 1200w">
+                    </a>
+                    <figcaption>Fog in Winter</figcaption>
+                </figure>
+            </div>
+            <div class="gallery_item">
+                <figure><a href="images/gallery/spring.jpg" target="_blank">
+                    <img src="images/gallery/spring.jpg" alt="spring" srcset="
+                        images/gallery/spring400.jpg 400w,
+                        images/gallery/spring800.jpg 800w,
+                        images/gallery/spring1200.jpg 1200w">
+                    </a>
+                    <figcaption>Springtime in the Park</figcaption>
+                </figure>
+            </div>
+            <div class="gallery_item">
+                <figure><a href="images/gallery/hail.jpg" target="_blank">
+                    <img src="images/gallery/hail.jpg" alt="fog" srcset="
+                        images/gallery/hail400.jpg 400w,
+                        images/gallery/hail800.jpg 800w,
+                        images/gallery/hail1200.jpg 1200w">
+                    </a>
+                    <figcaption>Marble Sized Hail </figcaption>
+                </figure>
+            </div>
+            <div class="gallery_item">
+                <figure><a href="images/gallery/thunderstorm.jpg" target="_blank">
+                    <img src="images/gallery/thunderstorm.jpg" alt="thunderstorm" srcset="
+                        images/gallery/thunderstorm400.jpg 400w,
+                        images/gallery/thunderstorm800.jpg 800w,
+                        images/gallery/thunderstorm1200.jpg 1200w">
+                    </a>
+                    <figcaption>Thunderstorm over the Bay</figcaption>
+                </figure>
+            </div>
+            <div class="gallery_item">
+                <figure><a href="images/gallery/tornado.jpg" target="_blank" style="cursor: url(images/shark.png) 32 32, auto;">
+                    <img src="images/gallery/tornado.jpg" alt="tornado" srcset="
+                        images/gallery/tornado400.jpg 400w,
+                        images/gallery/tornado800.jpg 800w,
+                        images/gallery/tornado1200.jpg 1200w">
+                    </a>
+                    <figcaption>Tornado!</figcaption>
+                </figure>
+            </div>
+            <div class="gallery_item">
+                <figure><a href="images/gallery/hurricane.jpg" target="_blank">
+                    <img src="images/gallery/hurricane.jpg" alt="hurricane" srcset="
+                        images/gallery/hurricane400.jpg 400w,
+                        images/gallery/hurricane800.jpg 800w,
+                        images/gallery/hurricane1200.jpg 1200w">
+                    </a>
+                    <figcaption>Hurricane Odom</figcaption>
+                </figure>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="contact">
+            Contact information placeholder<br> 999.999.9999
+            <br> 123 Main St. Anytown, US 99999<br> Google Map
+        </div>
+        <div class="footer-bar">&copy;2018 | All Rights Reserved | Tri-Cities Weather | <span id="datestring"></span>
+        </div>
+    </footer>
+
+</body>
+<script src="scripts/currentdate.js"></script>
+<script src="scripts/hamburger.js"></script>
+
+</html>
