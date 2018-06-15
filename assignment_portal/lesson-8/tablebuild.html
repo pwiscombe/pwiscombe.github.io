@@ -7,54 +7,7 @@
     <meta name="description" content="tablebuild">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
-
-    <style>
-        main {
-            font-family: 'Ubuntu', sans-serif;
-            background-color: white;
-        }
-
-        table {
-            width: 20rem;
-            box-shadow: .5rem .5rem 1rem #628ca6;
-            text-align: center;
-            border-collapse: collapse;
-        }
-
-        thead th,
-        tfoot td {
-            background-color: #7fb9c2;
-        }
-
-        thead {
-            font-size: 1.75rem;
-            font-weight: bold;
-        }
-
-        tfoot {
-            font-size: .7rem;
-        }
-
-        tbody th,
-        tbody td:hover {
-            background-color: #628ca6;
-            color: white;
-        }
-
-        th,
-        td {
-            padding: .5rem;
-            border: 2px solid #ddd;
-        }
-
-        tr:nth-child(even) {
-            background-color: #e7f0ed;
-        }
-
-        tr:nth-child(odd) {
-            background-color: #e7ffed;
-        }
-    </style>
+    <link rel="stylesheet" href="styles/table.css">
 
 </head>
 
@@ -90,7 +43,7 @@
                 <tr>
                     <td>November</td>
                     <td>$8,610</td>
-                    <td>$7,500</td>
+                    <td class="exceed">$7,500</td>
                 </tr>
                 <tr>
                     <td><em>Black Friday</em></td>
