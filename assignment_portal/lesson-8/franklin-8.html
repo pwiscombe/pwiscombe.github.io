@@ -45,10 +45,14 @@
             </div>
             <div class="weather">
                 <picture class="weather_pic">
-                    <img src="images/franklin320.jpg" alt="franklin" srcset="images/franklin320.jpg 320w,
+                    <img src="images/franklin320.jpg" alt="franklin"
+                         srcset="images/franklin320.jpg 320w,
                                  images/franklin640.jpg 640w,
-                                 images/franklin800.jpg 800w
-                                 ">
+                                 images/franklin800.jpg 800w"
+                         sizes="(max-width: 400px) 320px,
+                                (max-width: 760px) 640px,
+                                800px"
+                         >
                 </picture>
                 <section class="weather-summary">
                     <h3>Weather Summary</h3>
@@ -117,8 +121,11 @@
             <picture class="news_pic">
                 <img src="images/franklin_news.jpg" alt="franklin_news" srcset="images/franklin_news_400.jpg 400w,
                              images/franklin_news_800.jpg 800w,
-                             images/franklin_news_1200.jpg 1200w
-                             ">
+                             images/franklin_news_1200.jpg 1200w"
+                     sizes="(max-width: 640px) 400px,
+                            (max-width: 960px) 800px,
+                            1200px"
+                     >
             </picture>
         </div>
     </main>
@@ -132,9 +139,9 @@
         </div>
     </footer>
 
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
-<script src="scripts/currentdate.js"></script>
-<script src="scripts/hamburger.js"></script>
-<script src="scripts/windchill.js"></script>
 
 </html>
