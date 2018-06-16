@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<body>
+    <div class="conditions">
+        <p>Chance of Precipitation: 0%</p>
+        <p>Wind Speed: 5 mph SW</p>
+        <p>Wind Chill: <span id="wchill"></span></p>
+        <span id="demo"></span>
+    </div>
+</body>
+
+<script>
+    var high = 90, low = 66, airTemp = ((high + low) / 2), windSpeed = 5;
+    var windChillCalc = 35.74 + 0.6215 * airTemp - 35.75 * Math.pow(windSpeed, 0.16) + 0.4275 * airTemp * Math.pow(windSpeed, 0.16);
+    document.getElementById("wchill").innerHTML = windChillCalc;
+
+</script>
+
+</html>
