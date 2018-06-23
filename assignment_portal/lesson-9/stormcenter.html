@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Storm Center</title>
+    <meta name="description" content="Storm Center">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main-9.css">
+    <link rel="stylesheet" href="styles/medium-9.css">
+    <link rel="stylesheet" href="styles/large-9.css">
+    <link rel="stylesheet" href="styles/storm.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/tcw.png" alt="logo">
+        </div>
+        <div class="heading">
+            <h1>Tri-City Weather</h1>
+            <p class="subheading">Because Looking Outside Takes Too Long!</p>
+        </div>
+    </header>
+
+    <nav>
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li><a href="franklin-9.html">Franklin</a></li>
+            <li><a href="#">Greenville</a></li>
+            <li><a href="#">Springfield</a></li>
+            <li class="active"><a href="#">Storm Center</a></li>
+            <li><a href="gallery-9.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="stormForm">
+            <h1>Storm Report</h1>
+
+            <form method="get" action="thanks.html">
+
+                <div class="section">
+                    <span>1</span>Personal Information</div>
+                <div class="subsection">
+                    <label>Full Name:<input type="text" name="fullname" placeholder="Full Name" pattern="[A-z\s]{5,}" required autocomplete="off"></label>
+                    <label>Email:<input type="email" name="email" placeholder="email@internet.com"  autocomplete="off"></label>
+                    <label>Phone Number:<input type="tel" name="phone" required autocomplete="off"></label>
+                    <label>ZIP Code:<input type="text" name="ZIP" pattern="^\d{5,6}(?:[-\s]\d{4})?$" required autocomplete="off"></label>
+                </div>
+
+                <div class="section">
+                    <span>2</span>Storm Report</div>
+                <div class="subsection">
+                    <label>Storm Date:<input type="date" name="date"></label>
+
+                    <label>Storm Type:<input type="text" name="stormtype" list="storm">
+
+                <datalist id="storm">
+                    <option value = "Flash Flood"></option>
+                    <option value = "Hail"></option>
+                    <option value = "Hurricane"></option>
+                    <option value = "Sharknado"></option>
+                    <option value = "Thunderstorm"></option>
+                    <option value = "Tornado"></option>
+                    </datalist>
+
+                </label>
+
+                    <label>Storm Severity<br>
+                    1 <input type="range" id="severity" value="5" min="1" max="10" step="1" list="sevsettings"> 10
+                    <datalist id="sevsettings">
+                        <option>1</option>   <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                    </datalist>
+                </label>
+                    <label>
+                Storm Region:
+                    <select name="region">
+                    <option value="select" disabled selected>Select Region</option>
+                    <option value="Franklin">Franklin</option>
+                    <option value="Greenville">Greenville</option>
+                    <option value="Springfield">Springfield</option>
+                    </select></label>
+                    <label>
+                        Are You In Danger:</label>
+
+                    <label><input type="radio" name="dangerLevel" value="yes"><span class="ymn">Yes</span></label>
+                    <label><input type="radio" name="dangerLevel" value="maybe"><span class="ymn">Maybe</span></label>
+                    <label><input type="radio" name="dangerLevel" value="no"><span class="ymn">No</span></label>
+                </div>
+                <div class="section">
+                    <span>3</span>Additional Information</div>
+                <div class="subsection">
+                    <label>
+                Comments:
+                    <textarea name="additionalInfo"></textarea>
+
+                </label>
+                </div>
+
+                <input type="submit" value="Send" class="submitButton">
+
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="contact">
+            Contact information placeholder<br> 999.999.9999
+            <br> 123 Main St. Anytown, US 99999<br> Google Map
+        </div>
+        <div class="footer-bar">&copy;2018 | All Rights Reserved | Tri-Cities Weather | <span id="datestring"></span>
+        </div>
+    </footer>
+
+
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+</body>
+</html>
