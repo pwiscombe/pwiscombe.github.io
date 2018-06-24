@@ -41,7 +41,7 @@
     <main>
         <div class="city_weather">
             <div class="city_name">
-                <h2>Franklin</h2>
+                <h2 id="city">City</h2>
             </div>
             <div class="weather">
                 <picture class="weather_pic">
@@ -56,22 +56,16 @@
                 </picture>
                 <section class="weather-summary">
                     <h3>Weather Summary</h3>
-                    <div class="current">
+                    <div class="currentConditions">
+                    <figure><img src="images/current_icon.png" alt="weather icon" id="weather_icon"></figure>
                         <div class="condition">
-                            Sunny
-                        </div>
-                        <figure class="weather_icon">
-                            <img src="images/current_icon.png" alt="Current">
-                        </figure>
+                            Current Temperature: <span id="currentTemp">Temperature</span>&deg; F<br>
+                            Windchill: <span id="windChill">WindChill</span>&deg; F<br>
+                            Current Conditions: <span id="description">Conditions</span><br>
+                            Today's High: <span id="highTemp">High</span>&deg; F<br>
+                            Today's Low: <span id="lowTemp">Low</span>&deg; F<br>
+                            Wind Speed: <span id="windSpeed">Speed</span> MPH<br>
                     </div>
-                    <div class="highlow">
-                        <div class="high">High: 90&deg;F</div>
-                        <div class="windchill"><span id="chilltemp"></span></div>
-                        <div class="low">Low: 66&deg;F</div>
-                    </div>
-                    <div class="precip_wind">
-                        <p>Chance Precipitation: 0%</p>
-                        <p>Wind Speed: 5mph SW</p>
                     </div>
                 </section>
             </div>
@@ -141,7 +135,7 @@
 
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/hamburger.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/weatherapi.js"></script>
 </body>
 
 </html>
