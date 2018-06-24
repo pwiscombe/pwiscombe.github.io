@@ -1,4 +1,3 @@
-var header = document.querySelector('header');
 var section = document.querySelector('section');
 var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 var request = new XMLHttpRequest();
@@ -28,13 +27,14 @@ function showData(jsonObj) {
         myPara1.textContent = 'Motto: ' + town[i].motto;
         myPara2.textContent = 'Year Founded: ' + town[i].yearFounded;
         myPara3.textContent = 'Population: ' + town[i].currentPopulation;
-        myPara4.textContent = 'Annual Rainfall: ' + town[i].averageRainfall;
+        myPara4.textContent = 'Annual Rainfall: ' + town[i].averageRainfall +' inches';
 
         myArticle.appendChild(myH2);
         myArticle.appendChild(myPara1);
         myArticle.appendChild(myPara2);
         myArticle.appendChild(myPara3);
         myArticle.appendChild(myPara3);
+        myArticle.appendChild(myPara4);
         section.appendChild(myArticle);
     }
     }

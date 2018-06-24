@@ -227,6 +227,7 @@ article.townData{
     padding: 1rem;
     border-radius: 1rem;
     box-shadow: .25rem .25rem 1rem black;
+    max-width: 100%;
 
 
 }
