@@ -9,8 +9,10 @@
         /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
     }
 
-    .gallery_grid{
+    .gallery_grid {
         grid-template-columns: auto auto auto;
+
+
     }
     .gallery_item{
         border-radius: 1rem;
