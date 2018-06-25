@@ -9,18 +9,27 @@ weatherObject.onload = function () {
     document.getElementById('city').innerHTML = weatherInfo.name;
     var temperature = weatherInfo.main.temp;
     var wind = weatherInfo.wind.speed;
-    var windchill = Math.round(35.74 + (0.6215 * temperature) - (35.75 * Math.pow(wind, 0.16)) + (0.4275 * temperature * Math.pow(wind, 0.16)));
+    var humidity = weatherInfo.main.humidity;
+    var windchill = (35.74 + (0.6215 * temperature) - (35.75 * Math.pow(wind, 0.16)) + (0.4275 * temperature * Math.pow(wind, 0.16)));
+    var heatIndexCalc = (-42.379 + (2.049 * temperature) + (10.1433 * humidity) + (-0.2248 * temperature * humidity) + (-0.006837 * temperature * temperature) + (-0.05482 * humidity * humidity) + (0.001229 * temperature * temperature * humidity) + (0.00085282 * temperature * humidity * humidity) + (-0.00000199 * temperature * temperature * humidity * humidity));
     var tempHigh = weatherInfo.main.temp_max;
     var tempLow = weatherInfo.main.temp_min;
     document.getElementById('currentTemp').innerHTML = Math.round(parseFloat(temperature));
-    document.getElementById('description').innerHTML = weatherInfo.weather["0" ].main;
-    var iconcode = weatherInfo.weather["0" ].icon;
-    var icon_path = "http://openweathermap.org/img/w/" +iconcode +".png";
+    document.getElementById('description').innerHTML = weatherInfo.weather["0"].main;
+    var iconcode = weatherInfo.weather["0"].icon;
+    var icon_path = "http://openweathermap.org/img/w/" + iconcode + ".png";
     document.getElementById('weather_icon').src = icon_path;
-    document.getElementById('windChill').innerHTML= Math.round(parseFloat(windchill));
+    if (temperature > 80) {
+        document.getElementById('windChill').innerHTML = "Heat Index: " + Math.round(parseFloat(heatIndexCalc));
+    }
+else if (temperature > windchill) {
+    document.getElementById('windChill').innerHTML = "Windchill: " + Math.round(parseFloat(windchill));
+} else {
+    document.getElementById('windChill').innerHTML = "Feels like: " + Math.round(parseFloat(temperature));
+}
 
-    document.getElementById('windSpeed').innerHTML = Math.round(parseFloat(wind));
-    document.getElementById('highTemp').innerHTML= Math.round(parseFloat(tempHigh));
-    document.getElementById('lowTemp').innerHTML= Math.round(parseFloat(tempLow));
+document.getElementById('windSpeed').innerHTML = Math.round(parseFloat(wind));
+document.getElementById('highTemp').innerHTML = Math.round(parseFloat(tempHigh));
+document.getElementById('lowTemp').innerHTML = Math.round(parseFloat(tempLow));
 
 }
