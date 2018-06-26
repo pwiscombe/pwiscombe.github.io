@@ -1,0 +1,22 @@
+@media only screen and (min-width: 64em) {
+
+    header,
+    nav,
+    main,
+    footer {
+        /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+        max-width: 90em;
+        /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+    }
+
+    .gallery_grid {
+        grid-template-columns: auto auto auto;
+
+
+    }
+    .gallery_item{
+        border-radius: 1rem;
+    }
+    .gallery_item:hover{
+        box-shadow: .5rem .5rem 2rem black;}
+}

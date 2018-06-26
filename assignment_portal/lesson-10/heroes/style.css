@@ -1,0 +1,67 @@
+/* || general styles */
+
+html {
+    font-family: 'helvetica neue', helvetica, arial, sans-serif;
+    background: linear-gradient(#ff1a1a, #000);
+}
+
+body {
+    width: 800px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+h1,
+h2 {
+    font-family: 'Faster One', cursive;
+}
+
+/* header styles */
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    text-shadow: 5px 1px 8px rgba(255,255,255,.5);
+}
+
+header p {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+header,
+h2{
+    text-align: center;
+    color: black;
+    text-shadow: 2px 0px 4px rgba(255, 255, 255, .5);
+}
+
+/* section styles */
+
+section article {
+    width: 33%;
+    float: left;
+    height: 20rem;
+    padding: rem;
+    color: whitesmoke;
+    text-shadow: 2px 2px 4px black;
+    border: 1px solid white;
+}
+article:hover{
+    background-color: rgba(255,255,255,0.05);
+}
+
+section p {
+    margin: 5px 10px;
+}
+
+section ul {
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+    letter-spacing: -5px;
+    margin-bottom: 10px;
+
+}
