@@ -3,11 +3,6 @@ var weatherObject = new XMLHttpRequest();
 var city = document.getElementById("cityName").innerText;
 var locationId;
 switch (city) {
-    case "Franklin":
-        {
-            locationId = "4759986";
-            break;
-        }
     case "Greenville":
         {
             locationId = "4695066";
@@ -18,7 +13,15 @@ switch (city) {
             locationId = "4409896"
             break;
         }
+        //default to Franklin
+    default:
+        {
+            locationId = "4759986";
+        }
 }
+
+
+
 
 weatherObject.open('GET', '//api.openweathermap.org/data/2.5/weather?id=' + locationId + '&appid=130fd29c0ecfd2034fcab509cb06f917&units=imperial', true);
 weatherObject.send();
