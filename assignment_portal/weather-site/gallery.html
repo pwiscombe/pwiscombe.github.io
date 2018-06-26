@@ -15,15 +15,7 @@
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <img src="images/tcw.png" alt="logo">
-        </div>
-        <div class="heading">
-            <h1>Tri-City Weather</h1>
-            <p class="subheading">Because Looking Outside Takes Too Long!</p>
-        </div>
-    </header>
+    <header includefile="header.html"></header>
 
     <nav>
         <button onclick="toggleMenu()">&#9776;</button>
@@ -128,7 +120,9 @@
         </div>
     </footer>
 
+    <footer includefile="footer.html"></footer>
 
+    <script src="scripts/include.js"></script>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/hamburger.js"></script>
 </body>
