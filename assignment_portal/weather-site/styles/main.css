@@ -98,6 +98,7 @@ main h2 {
     position:relative;
     top: -10px;
 }
+
 figure {
     margin: 0 0 .2rem 2%;
     width: 96%;
@@ -117,10 +118,16 @@ figcaption {
     padding: .5rem;
 }
 
+
 section.weather-summary figure {
-    width: 50%;
-    text-align: left
+    border: 2px solid gray;
+    width: 15vw;
+    height: 15vw;
+    border-radius: 25%;
+    align-content: center;
+    margin: 1rem;
 }
+
 section.weather-summary h3{
     text-align: center;
 }
@@ -131,7 +138,7 @@ div.currentConditions {
 }
 
 #weather_icon {
-    width: 20vw;
+height:100%
 }
 
 section.forecast {

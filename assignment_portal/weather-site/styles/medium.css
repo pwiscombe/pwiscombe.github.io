@@ -20,7 +20,6 @@
     nav ul.hide {
         display: flex;
         justify-content: center;
-
     }
 
 
@@ -38,12 +37,6 @@
         max-width: 50vw;
     }
 
-    section.weather-summary {
-        margin: auto;
-    }
-
-
-
     section.forecast {
 
         display: block;
@@ -58,7 +51,6 @@
     }
 
     .news_pic img {
-
         width: 50vw;
 
     }
