@@ -16,9 +16,17 @@ function showData(jsonObj) {
     for (var i = 0; i < town.length; i++) {
         if (town[i].name == "Franklin" || town[i].name == "Springfield" ||town[i].name == "Greenville")
         {
-        var myArticle = document.createElement('article');
+            var myLink = document.createElement('a')
+            myLink.setAttribute ('href', town[i].name.toLowerCase()+'.html');
+            var myArticle = document.createElement('article');
             myArticle.className = "townData";
+
         var myH2 = document.createElement('h2');
+
+        var cityImgf = document.createElement('img');
+            cityImgf.className = 'indexPic';
+            cityImgf.setAttribute('src', 'images/'+ town[i].name + '.jpg');
+            cityImgf.setAttribute('alt', 'The City of ' + town[i].name);
         var myPara1 = document.createElement('p');
         var myPara2 = document.createElement('p');
         var myPara3 = document.createElement('p');
@@ -29,13 +37,16 @@ function showData(jsonObj) {
         myPara3.textContent = 'Population: ' + town[i].currentPopulation;
         myPara4.textContent = 'Annual Rainfall: ' + town[i].averageRainfall +' inches';
 
+
         myArticle.appendChild(myH2);
+        myArticle.appendChild(cityImgf);
         myArticle.appendChild(myPara1);
         myArticle.appendChild(myPara2);
         myArticle.appendChild(myPara3);
         myArticle.appendChild(myPara3);
         myArticle.appendChild(myPara4);
-        section.appendChild(myArticle);
+        myLink.appendChild(myArticle);
+        section.appendChild(myLink);
     }
     }
 }

@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 
-/* This wildcard applies to all elements ensuring a box layout model */
-
 body {
     font-size: 14px;
     font-family: 'Open Sans';
@@ -16,7 +14,6 @@ nav,
 main,
 footer {
     max-width: 37.5em;
-    /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
 }
 
 header {
@@ -30,9 +27,8 @@ header {
     flex-direction: row;
 }
 
-.logo {
-    width: 4rem;
-    height: 4rem;
+.logo img {
+    height: 15vw;
 }
 
 .heading {
@@ -55,10 +51,7 @@ nav button {
     border: none;
     font-size: 1.6rem;
     color: #eee;
-
-
 }
-
 
 nav {
     background-color: #669944;
@@ -67,13 +60,11 @@ nav {
     overflow: hidden;
 }
 
-
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
-
 
 nav ul li a {
     display: flex;
@@ -81,14 +72,11 @@ nav ul li a {
     text-decoration: none;
     color: #eee;
     border-top: 1px solid rgba(0, 0, 0, 0.3);
-
-
 }
 
 nav ul li.active a {
     background-color: rgba(0, 0, 0, 0.4);
     color: #fff;
-
 }
 
 nav ul li a:hover {
@@ -100,17 +88,16 @@ nav ul.hide {
     display: none;
 }
 
-main {}
-
 main h2 {
     text-align: center;
     font-family: 'Open Sans';
     font-size: 1.5em;
 }
-
-
-main {}
-
+.weather div p{
+    text-align: center;
+    position:relative;
+    top: -10px;
+}
 figure {
     margin: 0 0 .2rem 2%;
     width: 96%;
@@ -121,21 +108,9 @@ figcaption {
     font-family: 'Open Sans';
     font-size: 1rem;
     font-weight: 600;
-    padding-top:.5rem;
+    padding-top: .5rem;
 }
 
-section.weather-summary {
-
-    text-align: left;
-}
-
-.current {
-    display: flex;
-    align-items: center;
-    position: relative;
-    right:35px;
-
-}
 
 .weather_pic img {
     max-width: 100%;
@@ -146,46 +121,19 @@ section.weather-summary figure {
     width: 50%;
     text-align: left
 }
-
-.weather_icon img {
-    width: 75px;
+section.weather-summary h3{
+    text-align: center;
 }
-
-div.highlow {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-
-}
-
-.high,
-.highchill {
-    margin-right: .5rem;
-
-}
-
-.low,
-.lowchill {
-    margin-left: .5rem;
-
-}
-.windchill{
-    border: 1px solid black;
-    padding:.25rem;
-    position:relative;
-    top: -.25rem;
-}
-
-div.currentConditions{
+div.currentConditions {
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
-
 }
-#weather_icon{
-    width: 100px;
 
+#weather_icon {
+    width: 20vw;
 }
+
 section.forecast {
     display: none;
     text-align: center;
@@ -202,7 +150,6 @@ td {
 article h3 {
     position: relative;
     margin-left: 1rem;
-
 }
 
 main article p {
@@ -213,7 +160,6 @@ main article p {
     max-width: 100%;
     height: auto;
     padding: 1em;
-
 }
 
 .gallery_grid {
@@ -221,21 +167,30 @@ main article p {
     grid-gap: 2rem;
     grid-template-columns: auto;
     padding: 2rem;
+    width: 100vw%;
+}
+
+.gallery_grid a {
+    text-decoration: none;
+    color: black;
 }
 
 .gallery_item {
     min-width: 100%;
     padding: 2em;
-
 }
 
-article.townData{
+article.townData {
     border: 1px solid #ccc;
     padding: 1rem;
     border-radius: 1rem;
     box-shadow: .25rem .25rem 1rem black;
     max-width: 100%;
+    height: 100%;
+}
 
+article.townData img {
+    width: 100%;
 }
 
 .gallery_item img {
@@ -246,7 +201,7 @@ article.townData{
 }
 
 footer {
-    clear:both;
+    clear: both;
     font-family: Montserrat;
     background-color: #5599bb;
     padding: .5em;

@@ -1,15 +1,18 @@
 @media only screen and (min-width: 37.5em) {
 
-    /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
     header,
     nav,
     main,
-    footer {
-        /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+    footer,
+    .gallery_grid {
+
         max-width: 64em;
-        /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+
     }
-    /* hamburger button does not need to be shown in the medium on up views */
+
+    .logo img{
+        max-height: 100px;}
+
     nav button {
         display: none;
     }
@@ -20,7 +23,6 @@
 
     }
 
-    nav ul li {}
 
     nav ul li a {
         border: none;
@@ -40,13 +42,7 @@
         margin: auto;
     }
 
-    h3 {}
 
-    div.current {}
-
-    section.weather-summary figure img {
-        width: 100px;
-    }
 
     section.forecast {
 
@@ -56,7 +52,7 @@
     .city_news {
         display: flex;
     }
-    article {}
+
     .story h3 {
         text-align: center;
     }
@@ -69,7 +65,7 @@
 
     .gallery_grid {
         grid-template-columns: auto auto;
+
     }
 
-    footer {}
 }

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title id="cityName">Springfield</title>
+    <title id="cityName">Franklin</title>
     <meta name="description" content="Franklin Weather Page">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
@@ -16,14 +16,7 @@
 
 <body>
 
-    <header>
-        <div class="logo">
-            <img src="images/tcw.png" alt="logo">
-        </div>
-        <div class="heading">
-            <h1>Tri-City Weather</h1>
-            <p class="subheading">Because Looking Outside Takes Too Long!</p>
-        </div>
+    <header includefile="header.html">
     </header>
 
     <nav>
@@ -36,6 +29,7 @@
             <li><a href="stormcenter.html">Storm Center</a></li>
             <li><a href="gallery.html">Gallery</a></li>
         </ul>
+
     </nav>
 
     <main>
@@ -45,27 +39,20 @@
             </div>
             <div class="weather">
                 <picture class="weather_pic">
-                    <img src="images/franklin320.jpg" alt="franklin"
-                         srcset="images/franklin320.jpg 320w,
+                    <img src="images/franklin320.jpg" alt="franklin" srcset="images/franklin320.jpg 320w,
                                  images/franklin640.jpg 640w,
-                                 images/franklin800.jpg 800w"
-                         sizes="(max-width: 400px) 320px,
+                                 images/franklin800.jpg 800w" sizes="(max-width: 400px) 320px,
                                 (max-width: 760px) 640px,
-                                800px"
-                         >
+                                800px">
                 </picture>
                 <section class="weather-summary">
                     <h3>Weather Summary</h3>
                     <div class="currentConditions">
-                    <figure><img src="images/current_icon.png" alt="weather icon" id="weather_icon"></figure>
+                        <figure><img src="images/current_icon.png" alt="weather icon" id="weather_icon"></figure>
                         <div class="condition">
                             Current Temperature: <span id="currentTemp">Temperature</span>&deg; F<br>
-                            <span id="windChill">WindChill</span>&deg; F<br>
-                            Current Conditions: <span id="description">Conditions</span><br>
-                            Today's High: <span id="highTemp">High</span>&deg; F<br>
-                            Today's Low: <span id="lowTemp">Low</span>&deg; F<br>
-                            Wind Speed: <span id="windSpeed">Speed</span> MPH<br>
-                    </div>
+                            <span id="windChill">WindChill</span>&deg; F<br> Current Conditions: <span id="description">Conditions</span><br> Today's High: <span id="highTemp">High</span>&deg; F<br> Today's Low: <span id="lowTemp">Low</span>&deg; F<br> Wind Speed: <span id="windSpeed">Speed</span> MPH<br>
+                        </div>
                     </div>
                 </section>
             </div>
@@ -115,27 +102,22 @@
             <picture class="news_pic">
                 <img src="images/franklin_news.jpg" alt="franklin_news" srcset="images/franklin_news_400.jpg 400w,
                              images/franklin_news_800.jpg 800w,
-                             images/franklin_news_1200.jpg 1200w"
-                     sizes="(max-width: 640px) 400px,
+                             images/franklin_news_1200.jpg 1200w" sizes="(max-width: 640px) 400px,
                             (max-width: 960px) 800px,
-                            1200px"
-                     >
+                            1200px">
             </picture>
         </div>
     </main>
 
-    <footer>
-        <div class="contact">
-            Contact information placeholder<br> 999.999.9999
-            <br> 123 Main St. Anytown, US 99999<br> Google Map
-        </div>
-        <div class="footer-bar">&copy;2018 | All Rights Reserved | Tri-Cities Weather | <span id="datestring"></span>
-        </div>
+    <footer includefile="footer.html">
     </footer>
 
-    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/include.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/weatherapi.js"></script>
+    <script defer src="scripts/currentdate.js"></script>
+
+
 </body>
 
 </html>

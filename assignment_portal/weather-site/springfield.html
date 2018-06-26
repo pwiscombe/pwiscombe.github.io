@@ -1,0 +1,93 @@
+<!DOCTYPE html><html lang="en-us"><head>
+    <meta charset="utf-8">
+    <title id="cityName">Springfield</title>
+    <meta name="description" content="Springfield Weather Page">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+
+<body>
+    <header includefile="header.html"></header>
+    <nav><button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="franklin.html">Franklin</a></li>
+            <li><a href="greenville.html">Greenville</a></li>
+            <li><a href="springfield.html">Springfield</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="city_weather">
+            <div class="city_name">
+                <h2 id="city">City</h2>
+            </div>
+            <div class="weather">
+                <div>
+                    <picture class="weather_pic"><img src="images/springfield_cave_400.jpg" alt="springfield_caves" srcset="images/springfield_cave_400.jpg 400w,images/springfield_cave_800.jpg 800w,images/springfield_cave_1200.jpg 1200w" sizes="(max-width: 640px) 400px,(max-width: 900px) 800px,1200px"></picture>
+                    <p>Escape the Heat Underground<br> in the Fantastic Caverns</p>
+                </div>
+                <section class="weather-summary">
+                    <h3>Weather Summary</h3>
+                    <div class="currentConditions">
+                        <figure><img src="images/current_icon.png" alt="weather icon" id="weather_icon"></figure>
+                        <div class="condition">Current Temperature: <span id="currentTemp">Temperature</span>&deg; F<br><span id="windChill">WindChill</span>&deg; F<br> Current Conditions: <span id="description">Conditions</span><br> Today's High: <span id="highTemp">High</span>&deg; F<br> Today's Low: <span id="lowTemp">Low</span>&deg; F<br> Wind Speed: <span id="windSpeed">Speed</span> MPH<br></div>
+                    </div>
+                </section>
+            </div>
+            <section class="forecast">
+                <h3>Ten Day Forecast</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day 1</th>
+                            <th>Day 2</th>
+                            <th>Day 3</th>
+                            <th>Day 4</th>
+                            <th>Day 5</th>
+                            <th>Day 6</th>
+                            <th>Day 7</th>
+                            <th>Day 8</th>
+                            <th>Day 9</th>
+                            <th>Day 10</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>89&deg;F</td>
+                            <td>87&deg;F</td>
+                            <td>78&deg;F</td>
+                            <td>75&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>79&deg;F</td>
+                            <td>83&deg;F</td>
+                            <td>85&deg;F</td>
+                            <td>89&deg;F</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+        <div class="city_news">
+            <article>
+                <div class="story">
+                    <h3>Springfield to be Translated</h3>
+                    <p class="city-article">In an spectacle not seen since the City of Enoch, our own town of Springfield is expected to be taken up into heaven after 3:00pm Saturday. Town resident Matilda Jenkins had been the last holdout following the mass conversion of the rest of the town by LDS missionaries. Mrs. Jenkins had been insisting that she wouldn't be baptized unless her faithful poodle, Snookums, could join her in the oridinance. The breakthrough came when Snookums fell into the neighbors pool and came out a with bright white fur. "Its a miracle," Mrs. Jenkins announced. "My Snookums done gone and baptized herself. I'm ready to follow her example."</p>
+                </div>
+            </article>
+            <picture class="news_pic"><img src="images/translate_400.jpg" alt="translation" srcset="images/translate_400.jpg 400w,images/translate_800.jpg 800w,images/translate_1200.jpg 1200w" sizes="(max-width: 640px) 400px,(max-width: 960px) 800px,1200px"></picture>
+        </div>
+    </main>
+    <footer includefile="footer.html"></footer>
+    <script src="scripts/include.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/weatherapi.js"></script>
+</body></html>

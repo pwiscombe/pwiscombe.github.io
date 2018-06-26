@@ -3,10 +3,9 @@
     header,
     nav,
     main,
-    footer {
-        /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+    footer,
+    .gallery_grid {
         max-width: 90em;
-        /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
     }
 
     .gallery_grid {
