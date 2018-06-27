@@ -17,14 +17,7 @@
 
 <body>
 
-    <header>
-        <div class="logo">
-            <img src="images/tcw.png" alt="logo">
-        </div>
-        <div class="heading">
-            <h1>Tri-City Weather</h1>
-            <p class="subheading">Because Looking Outside Takes Too Long!</p>
-        </div>
+    <header includefile="header.html">
     </header>
 
     <nav>
@@ -117,16 +110,8 @@
         </div>
     </main>
 
-    <footer>
-        <div class="contact">
-            Contact information placeholder<br> 999.999.9999
-            <br> 123 Main St. Anytown, US 99999<br> Google Map
-        </div>
-        <div class="footer-bar">&copy;2018 | All Rights Reserved | Tri-Cities Weather | <span id="datestring"></span>
-        </div>
-    </footer>
-
-
+    <footer includefile="footer.html"></footer>
+    <script src="scripts/include.js"></script>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/hamburger.js"></script>
 </body>
