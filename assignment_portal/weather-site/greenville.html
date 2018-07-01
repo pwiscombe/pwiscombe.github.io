@@ -44,8 +44,9 @@
                 </div>
                 <section class="weather-summary">
                     <h3>Weather Summary</h3>
-                    <div class="currentConditions">
+                    <div class="currentConditions"><div id=iconbox>
                         <figure><img src="images/current_icon.png" alt="weather icon" id="weather_icon"></figure>
+                        </div>
                         <div class="condition">Current Temperature: <span id="currentTemp">Temperature</span>&deg; F<br><span id="windChill">WindChill</span>&deg; F<br> Current Conditions: <span id="description">Conditions</span><br> Today's High: <span id="highTemp">High</span>&deg; F<br> Today's Low: <span id="lowTemp">Low</span>&deg; F<br> Wind Speed: <span id="windSpeed">Speed</span> MPH<br></div>
                     </div>
                 </section>
@@ -105,7 +106,7 @@
 
     <footer includefile="footer.html">
     </footer>
-
+    <div class='subfooter'><p><span id='datestring'></span></p></div>
     <script src="scripts/include.js"></script>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/hamburger.js"></script>

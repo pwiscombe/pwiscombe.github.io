@@ -25,6 +25,7 @@ header {
     padding: .5em;
     display: flex;
     flex-direction: row;
+
 }
 
 .logo img {
@@ -120,14 +121,18 @@ figcaption {
 
 
 section.weather-summary figure {
+display:inline;
+}
+div#iconbox {
     border: 2px solid gray;
     width: 15vw;
     height: 15vw;
     border-radius: 25%;
     align-content: center;
     margin: 1rem;
+    max-height: 6rem;
+    max-width: 6rem;
 }
-
 section.weather-summary h3{
     text-align: center;
 }
@@ -161,12 +166,15 @@ article h3 {
 
 main article p {
     text-align: justify;
+    margin: .5rem;
 }
 
-.news_pic {
-    max-width: 100%;
+.news_pic img {
+    width:100%;
     height: auto;
-    padding: 1em;
+    padding: .5rem;
+    margin .25rem;
+    box-shadow: .5rem .25rem 1rem gray;
 }
 
 .gallery_grid {
@@ -175,6 +183,7 @@ main article p {
     grid-template-columns: auto;
     padding: 2rem;
     width: 100vw%;
+
 }
 
 .gallery_grid a {
@@ -198,6 +207,9 @@ article.townData {
 
 article.townData img {
     width: 100%;
+    border-radius: .75rem;
+    box-shadow: .25rem .25rem 1rem;
+
 }
 
 .gallery_item img {
@@ -207,10 +219,13 @@ article.townData img {
     box-shadow: .25rem .25rem 1rem black;
 }
 
-footer {
+footer,
+.subfooter{
     clear: both;
     font-family: Montserrat;
     background-color: #5599bb;
     padding: .5em;
     text-align: center;
+
+
 }
