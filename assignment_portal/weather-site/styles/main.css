@@ -12,7 +12,7 @@ body {
 header,
 nav,
 main,
-footer {
+footer{
     max-width: 37.5em;
 }
 
@@ -220,12 +220,13 @@ article.townData img {
 }
 
 footer,
-.subfooter{
-    clear: both;
+div.subfooter{
+
     font-family: Montserrat;
     background-color: #5599bb;
     padding: .5em;
     text-align: center;
+    min-width: 100%;
 
 
 }
