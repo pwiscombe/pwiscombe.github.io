@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="The Mountain Spoke">
+        <meta name="author" content="Peter Wiscombe">
+        <link rel="icon" href="../../../../favicon.ico">
+
+        <title>The Mountain Spoke</title>
+
+
+        <link href="styles/normalize.css" rel="stylesheet">
+        <link href="styles/main.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Lato:400,700" rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="wrapper">
+        <div class="box page-title">
+            <h1>The Mountain Spoke</h1>
+        </div>
+        <nav class="box navigation">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="adventure.html">Adventure Tours</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="sales.html">Sales</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="box masthead">
+            <img src="images/biking_logo.png">
+        </div>
+        <div class="box main-content">
+            <h2>Contact Us</h2>
+            <form>
+
+                <fieldset>
+
+                    <div>
+                        <label>First Name</label>
+                    </div>
+                    <div>
+                        <input type="text" name="name" required pattern="[a-zA-Z ]+" minlength="3">
+                    </div>
+                    <div>
+                        <label>Last Name</label>
+                    </div>
+                    <div>
+                        <input type="text" name="name" required pattern="[a-zA-Z ]+" minlength="3">
+                    </div>
+                    <div>
+                        <label>Email</label>
+                    </div>
+                    <div>
+                        <input type="email" name="email" placeholder="name@inter.net">
+                    </div>
+                    <div>
+                        <label> Message</label>
+                    </div>
+                    <div>
+                        <textarea name="comments"></textarea>
+                    </div>
+                    <div>
+                        <button class="submit" type="submit" formaction="thanks.html">Submit</button>
+                    </div>
+
+                </fieldset>
+
+            </form>
+        </div>
+        <div class="box sidebar">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.9314410354723!2d-111.0929061847178!3d45.67227662755652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345459ab72cb6df%3A0xbb98968f9648ea88!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718!5e0!3m2!1sen!2sus!4v1523080491753"
+                    width="450" height="450" style="border:0" allowfullscreen></iframe>
+
+            </div>
+        <div class="box footer">
+            <p>3950 Valley Commons Drive | Bozeman, MT 59715<br>
+            <p>(213) 555-9999 | contact@themountainspoke.net<br>
+            <p>&copy;2018 All Rights Reserved | Peter D Wiscombe<br>
+                <a href="overview.html">Overview Video</a> | <span id="datestring"></span></p>
+        </div>
+        </div>
+    </body>
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/jsonTable.js"></script>
+<script src="scripts/currentdate.js"></script>
+</html>

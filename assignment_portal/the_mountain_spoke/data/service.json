@@ -1,0 +1,230 @@
+[
+    {
+        "Category": "Tune-ups",
+        "Inventory_#": "1001",
+        "Description": "Break-in Tune-up (within 60 Days)",
+        "Price": "N/C"
+    },
+    {
+        "Category": "Tune-ups",
+        "Inventory_#": "1001L",
+        "Description": "Late Break-in Tune-Up After 60 up to first year",
+        "Price": "$35.00 "
+    },
+    {
+        "Category": "Tune-ups",
+        "Inventory_#": "1011",
+        "Description": "Tune-up (geared)",
+        "Price": "$79.99 "
+    },
+    {
+        "Category": "Tune-ups",
+        "Inventory_#": "1012",
+        "Description": "Tune-up (single spd/freestyle)",
+        "Price": "$40.00 "
+    },
+    {
+        "Category": "Tune-ups",
+        "Inventory_#": "1013",
+        "Description": "Super Tune-up (includes drive train cleaning)",
+        "Price": "$119.99 "
+    },
+    {
+        "Category": "Tune-ups",
+        "Inventory_#": "1015",
+        "Description": "Pro Build",
+        "Price": "$179.99 "
+    },
+    {
+        "Category": "Wheels",
+        "Inventory_#": "2001",
+        "Description": "Flats on bike",
+        "Price": "$15.00 "
+    },
+    {
+        "Category": "Wheels",
+        "Inventory_#": "2002",
+        "Description": "Flats off bike",
+        "Price": "$8.00 "
+    },
+    {
+        "Category": "Wheels",
+        "Inventory_#": "2006",
+        "Description": "Wheel True",
+        "Price": "$15.00-25.00"
+    },
+    {
+        "Category": "Wheels",
+        "Inventory_#": "2007",
+        "Description": "Front Spoke Replacement",
+        "Price": "$10.00-15.00"
+    },
+    {
+        "Category": "Wheels",
+        "Inventory_#": "2008",
+        "Description": "Rear Spoke Replacement",
+        "Price": "$15.00-20.00"
+    },
+    {
+        "Category": "Wheels",
+        "Inventory_#": "2013",
+        "Description": "Install New Front Wheel",
+        "Price": "$15.00 "
+    },
+    {
+        "Category": "Wheels",
+        "Inventory_#": "2014",
+        "Description": "Install New Rear Wheel",
+        "Price": "$20.00 "
+    },
+    {
+        "Category": "Drivetrain",
+        "Inventory_#": "3002",
+        "Description": "Install Chain",
+        "Price": "$15.00 "
+    },
+    {
+        "Category": "Drivetrain",
+        "Inventory_#": "3005",
+        "Description": "Install Derailleur",
+        "Price": "$20.00 "
+    },
+    {
+        "Category": "Drivetrain",
+        "Inventory_#": "3008",
+        "Description": "Drivetrain Cleaning",
+        "Price": "$60.00 "
+    },
+    {
+        "Category": "Drivetrain",
+        "Inventory_#": "3012",
+        "Description": "Install Derailleur Cable",
+        "Price": "$20.00 "
+    },
+    {
+        "Category": "Drivetrain",
+        "Inventory_#": "3013",
+        "Description": "Install/Overhaul Bottom Bracket",
+        "Price": "$30.00 "
+    },
+    {
+        "Category": "Brakes",
+        "Inventory_#": "4002",
+        "Description": "Install Brake Caliper Road",
+        "Price": "$20.00 "
+    },
+    {
+        "Category": "Brakes",
+        "Inventory_#": "4005",
+        "Description": "Adjust Brake Front 0r Back",
+        "Price": "$15.00-25.00"
+    },
+    {
+        "Category": "Brakes",
+        "Inventory_#": "4007",
+        "Description": "Install Cantilever Brake Cable",
+        "Price": "$15.00 "
+    },
+    {
+        "Category": "Brakes",
+        "Inventory_#": "4008",
+        "Description": "Install Caliper Brake Cable",
+        "Price": "$15.00 "
+    },
+    {
+        "Category": "Front End",
+        "Inventory_#": "5001",
+        "Description": "Install Headset",
+        "Price": "$20.00-30.00"
+    },
+    {
+        "Category": "Front End",
+        "Inventory_#": "5004",
+        "Description": "Install Rigid Fork",
+        "Price": "$30.00 "
+    },
+    {
+        "Category": "Front End",
+        "Inventory_#": "5005",
+        "Description": "Install Road Handlebar includes taping",
+        "Price": "$40.00 "
+    },
+    {
+        "Category": "Front End",
+        "Inventory_#": "5009",
+        "Description": "Install Grips/Barends",
+        "Price": "$10.00 "
+    },
+    {
+        "Category": "Front End",
+        "Inventory_#": "5010",
+        "Description": "Install Threadless Stem",
+        "Price": "$10.00-20.00"
+    },
+    {
+        "Category": "Suspension",
+        "Inventory_#": "5012",
+        "Description": "Install Suspension Fork",
+        "Price": "$30.00-40.00"
+    },
+    {
+        "Category": "Suspension",
+        "Inventory_#": "5013",
+        "Description": "Install Rear Shock",
+        "Price": "$20.00-30.00"
+    },
+    {
+        "Category": "Suspension",
+        "Inventory_#": "5014",
+        "Description": "Air/Adjust Front or Rear Shock",
+        "Price": "$10.00 "
+    },
+    {
+        "Category": "Accessories",
+        "Inventory_#": "6001",
+        "Description": "Install Rear Rack/Baby Seats(additional hardware not included)",
+        "Price": "$20.00-25.00"
+    },
+    {
+        "Category": "Accessories",
+        "Inventory_#": "6002",
+        "Description": "Computers",
+        "Price": "$15.00 "
+    },
+    {
+        "Category": "Accessories",
+        "Inventory_#": "6003",
+        "Description": "Computers w/Cadence",
+        "Price": "$25.00 "
+    },
+    {
+        "Category": "Accessories",
+        "Inventory_#": "6005",
+        "Description": "Training Wheels",
+        "Price": "$15.00 "
+    },
+    {
+        "Category": "Accessories",
+        "Inventory_#": "6006",
+        "Description": "Fenders",
+        "Price": "$15.00-25.00"
+    },
+    {
+        "Category": "Accessories",
+        "Inventory_#": "6008",
+        "Description": "Install Pedals",
+        "Price": "$10.00 "
+    },
+    {
+        "Category": "Accessories",
+        "Inventory_#": "6010",
+        "Description": "Install Saddle/Seat",
+        "Price": "$10.00 "
+    },
+    {
+        "Category": "Fitting",
+        "Inventory_#": "7001",
+        "Description": "Bike Fitting",
+        "Price": "$75.00 "
+    }
+]

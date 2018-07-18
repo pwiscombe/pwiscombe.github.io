@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="The Mountain Spoke">
+        <meta name="author" content="Peter Wiscombe">
+        <link rel="icon" href="favicon.ico">
+
+        <title>The Mountain Spoke - Events Page</title>
+
+
+        <link href="styles/normalize.css" rel="stylesheet">
+        <link href="styles/main.css" rel="stylesheet">
+        <link href="styles/event_form.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Lato:400,700" rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="wrapper">
+        <div class="box page-title">
+            <h1>The Mountain Spoke</h1>
+        </div>
+        <nav class="box navigation">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="adventure.html">Adventure Tours</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="sales.html">Sales</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+            <div class="box masthead">
+                <img src="images/logo_l.png"><img class="stretch" src="images/logo_m.png"><img src="images/logo_r.png">
+            </div>
+        <div class="box main-content">
+            <h2>Events</h2>
+            <p>Random Text</p>
+        </div>
+        <div class="sidebar">
+            <h2>Event Registration</21>
+
+            <form method="get" action="thanks.html">
+
+                <div class="section">
+                    <span>1</span></div>
+                <div class="subsection">
+                    <label>
+                        <select name="event">
+                            <option value="select" disabled selected>Select Event</option>
+                            <option value="Event1">Cycle the Continental Divide</option>
+                            <option value="Event2">Event2</option>
+                        </select></label>
+                </div>
+                <div class="section">
+                    <span>2</span>Personal Information</div>
+                <div class="subsection">
+                    <label>Full Name:<input type="text" name="fullname" placeholder="Full Name" pattern="[A-z\s]{5,}" required autocomplete="off"></label>
+                    <label>Email:<input type="email" name="email" placeholder="email@internet.com"  autocomplete="off"></label>
+                    <label>Phone Number:<input type="tel" name="phone" required autocomplete="off"></label>
+                    <label>Birth Date:<input type="date" name="birthdate"></label>
+                    <label>Skill Level<br>
+                        Beginner <input type="range" id="skill" value="5" min="1" max="10" step="1" list="skillsettings"> Pro
+                        <datalist id="skillsettings">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                        </datalist>
+                    </label>
+                </div>
+
+                <div class="section">
+                    <span>3</span>Special Accomodations</div>
+                <div class="subsection">
+                    <label>
+                        <textarea name="specialAccomodations"></textarea>
+
+                    </label>
+                </div>
+
+                <input type="submit" value="Send" class="submitButton">
+
+            </form>
+        </div>
+            <div class="box footer">
+                <p>3950 Valley Commons Drive | Bozeman, MT 59715<br>
+                <p>(213) 555-9999 | contact@themountainspoke.net<br>
+                <p>&copy;2018 All Rights Reserved | Peter D Wiscombe<br>
+                    <a href="overview.html">Overview Video</a> | <span id="datestring"></span></p>
+            </div>
+        </div>
+    </body>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/jsonTable.js"></script>
+    <script src="scripts/currentdate.js"></script>
+</html>

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="The Mountain Spoke">
+    <meta name="author" content="Peter Wiscombe">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>The Mountain Spoke</title>
+
+
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Lato:400,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="box page-title">
+            <h1>The Mountain Spoke</h1>
+        </div>
+        <nav class="box navigation">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="adventure.html">Adventure Tours</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="sales.html">Sales</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="box masthead">
+            <img src="images/logo_l.png"><img class="stretch" src="images/logo_m.png"><img src="images/logo_r.png">
+        </div>
+        <div class="box main-content">
+            <h2>Service Options</h2>
+            <p>Call for an appointment today, We'll having you riding again tomorrow!</p>
+            <table id="jsonTable">
+            </table>
+        </div>
+        <div class="box sidebar">
+            <h2>Testimonials</h2>
+
+                <div class="testimonial">
+                <picture><img src="images/no_training_wheels.jpg"></picture><div>"The Mountain Spoke got my training wheels off so fast. Now I can ride with the big kids. - Allison G.</div>
+            <div class="testimonial">
+                <picture><img src="images/training_wheels.jpg"></picture><div>"The Mountain Spoke even had training wheels for my mountain bike. Now I can ride without fear. - Rufus L."</div>
+
+                    </div></div></div>
+        <div class="box footer">
+            <p>3950 Valley Commons Drive | Bozeman, MT 59715<br>
+                <p>(213) 555-9999 | contact@themountainspoke.net<br>
+            <p>&copy;2018 All Rights Reserved | Peter D Wiscombe<br>
+                <a href="overview.html">Overview Video</a> | <span id="datestring"></span></p>
+        </div>
+    </div>
+</body>
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/jsonTable.js"></script>
+<script src="scripts/currentdate.js"></script>
+</html>

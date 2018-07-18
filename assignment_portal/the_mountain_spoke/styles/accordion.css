@@ -1,0 +1,67 @@
+.accordion-container {
+    position: relative;
+    width: 100%;
+    border: 1px solid #000;
+    border-top: none;
+    outline: 0;
+    cursor: pointer;
+    border-bottom: .25rem solid #D71723;
+}
+
+.accordion-container .article-title {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0.625em 0.625em 0.625em 2em;
+    border-top: 1px solid #0079c1;
+    font-size: 1.25em;
+    font-weight: normal;
+    color: #000;
+    cursor: pointer;
+}
+
+.accordion-container .article-title:hover{
+    background-color: #000;
+    color: #fff;
+}
+.accordion-container .article-title:active,
+.accordion-container .content-entry.open .article-title {
+    background-color: #000;
+    color: white;
+}
+.accordion-container .article-title:hover{
+    background-color: #D71723;
+    color: #fff;
+}
+
+.accordion-container .article-title:hover i:before,
+.accordion-container .article-title:hover i:active,
+.accordion-container .content-entry.open i {
+    color: white;
+}
+
+.accordion-container .content-entry i {
+    position: absolute;
+    top: 10px;
+    left: 4px;
+    font-style: normal;
+    font-size: 1.3em;
+    color: #D71723;
+}
+
+.accordion-container .content-entry i:before {
+    content: "\25C9";
+}
+
+.accordion-container .content-entry.open i:before {
+    position: absolute;
+    left: 6px;
+    content: "\25CB";
+    color: #D71723;
+}
+
+.accordion-content {
+    display: none;
+    padding-left: 2.3125em;
+}
+
