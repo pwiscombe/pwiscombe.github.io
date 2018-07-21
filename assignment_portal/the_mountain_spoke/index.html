@@ -39,25 +39,94 @@
         <div class="box page-title">
             <h1>The Mountain Spoke</h1>
             <h2>Bozeman, Montana</h2>
+            <h3>We Peddle what You Pedal</h3>
         </div>
         <div class="box masthead">
+
             <img src="images/logo_l.png"><img class="stretch" src="images/logo_m.png"><img src="images/logo_r.png">
         </div>
         <div class=" main-content">
             <h2>What's New</h2>
             <div class="box" id="events">
                 <a href="events.html">
-                    <picture><img src="images/mountain_bike_768.jpg"></picture><span class="homelink">Register NOW for the Contintental Divide Classic!</span></a></div>
-            <div class="box"id="tours">
-                <a href="adventure.html"> <picture><img src="images/tour.jpg"></picture><span class="homelink">Check out the Adventure Tours available for all skill levels</span></a></div>
+                    <picture>
+                        <!-- 16:9 crop -->
+                        <source
+                                media="(min-width: 36em)"
+                                srcset="images/event/event_1920.jpg  1920w,
+                                        images/event/event_960.jpg 960w,
+                                        images/event/event_480.jpg  480w">
+                        <!-- square crop -->
+                        <source
+                                srcset="images/event/event_sq_822.jpg  822w,
+                                        images/event/event_sq_640.jpg 640w,
+                                        images/event/event_sq_320.jpg.jpg  320w">
+                        <img
+                             src="images/event/event_960.jpg"
+                             alt="mountain bike on top of ridge">
+                    </picture>
+                    <span class="homelink">Register NOW for the Contintental Divide Classic!</span></a></div>
+            <div class="box" id="tours">
+                <a href="adventure.html">
+                    <picture>
+                        <!-- 16:9 crop -->
+                        <source
+                                media="(min-width: 36em)"
+                                srcset="images/tour/tour_1920.jpg  1920w,
+                                        images/tour/tour_960.jpg 960w,
+                                        images/tour/tour_480.pg 480w">
+                        <!-- square crop -->
+                        <source
+                                srcset="images/tour/tour_sq_822.jpg  822w,
+                                        images/tour/tour_sq_640.jpg 640w,
+                                        images/tour/tour_sq_320.jpg  320w">
+                        <img
+                             src="images/tour/tour_960.jpg"
+                             alt="Group bike ride through Bozeman Montana.">
+                    </picture>
+
+
+                    <span class="homelink">Check out the Adventure Tours available for all skill levels</span></a></div>
         </div>
             <div class="sidebar">
 
             <h2>Sales and Service</h2>
                 <div class="box" id="service"><a href="service.html">
-                    <picture><img src="images/repair2.jpg"></picture><span class="homelink">Our Service Department will keep you moving</span></a></div>
+                    <picture>
+                        <!-- 16:9 crop -->
+                        <source
+                                media="(min-width: 36em)"
+                                srcset="images/repair/repair_1920.jpg  1920w,
+                                        images/repair/repair_960.jpg 960w,
+                                        images/repair/repair_480.jpg   480w">
+                        <!-- square crop -->
+                        <source
+                                srcset="images/repair/repair_sq_822.jpg  822w,
+                                        images/repair/repair_sq_640.jpg 640w,
+                                        images/repair/repair_sq_320.jpg  320w">
+                        <img
+                             src="images/repair/repair_960.jpg"
+                             alt="bicycle repair parts" >
+                    </picture>
+                    <span class="homelink">Our Service Department will keep you moving</span></a></div>
                 <div class="box" id="sales"><a href="sales.html">
-                    <picture><img src="images/go-electric.jpg"></picture><span class="homelink">Have you considered going Electric?<br> Check out the latest tech on sale today.</span></a></div>
+                    <picture>
+                        <!-- 16:9 crop -->
+                        <source
+                                media="(min-width: 36em)"
+                                srcset="images/go_electric/go_electric_1920.jpg  1920w,
+                                        images/go_electric/go_electric_960.jpg 960w,
+                                        images/go_electric/go_electric_480.jpg   480w">
+                        <!-- square crop -->
+                        <source
+                                srcset="images/go_electric/go_electric_sq_822.jpg  822w,
+                                        images/go_electric/go_electric_sq_640.jpg 640w,
+                                        images/go_electric/go_electric_sq_320.jpg  320w">
+                        <img
+                             src="images/go_electric/go_electric_960.jpg"
+                             alt="Igo Electric Mountain Bike">
+                    </picture>
+                    <span class="homelink">Have you considered going Electric?<br> Check out the latest tech on sale today.</span></a></div>
 
         </div>
         <div class="box footer">
@@ -67,8 +136,8 @@
                 <a href="overview.html">Overview Video</a> | <span id="datestring"></span></p>
         </div>
     </div>
-    </body>
+
     <script src="scripts/hamburger.js"></script>
-    <script src="scripts/jsonTable.js"></script>
     <script src="scripts/currentdate.js"></script>
+    </body>
 </html>

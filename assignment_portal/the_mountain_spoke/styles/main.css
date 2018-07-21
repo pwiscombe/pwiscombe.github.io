@@ -13,28 +13,31 @@ body {
     border-bottom: .25rem solid #D71723;
 
 }
-.box img{
-    width:100%;
+
+.box img {
+    width: 100%;
     border-radius: 5px;
 
 }
-.box a
-{
+
+.box a {
     text-decoration: none;
-    color:inherit;
+    color: inherit;
 
 }
+
 .masthead {
     grid-area: masthead;
     background-color: #1D1D1B;
     border-bottom: .25rem solid #D71723;
-    min-width:360px;
-    display:inline-flex;
+    min-width: 360px;
+    display: inline-flex;
 
 }
-.masthead img{
-    height:172px;
-    border-radius:0;
+
+.masthead img {
+    height: 172px;
+    border-radius: 0;
 }
 
 .page-title {
@@ -60,7 +63,10 @@ nav {
     font-size: 1em;
     overflow: hidden;
 }
-nav h2{ display:inline;}
+
+nav h2 {
+    display: inline;
+}
 
 nav ul {
     list-style-type: none;
@@ -102,8 +108,8 @@ nav ul.hide {
 
 .footer {
     grid-area: footer;
-    align-content:baseline;
-    text-align:center;
+    align-content: baseline;
+    text-align: center;
     font-size: 0.8rem;
     height: 6rem;
 }
@@ -121,9 +127,10 @@ h2 {
     font-family: 'Lato', sans-serif;
     font-weight: 700;
 }
+
 .homelink {
     font-family: 'Lato', sans-serif;
-    height:4rem;
+    height: 4rem;
     font-weight: 700;
     font-size: 1.1rem;
 
@@ -132,18 +139,13 @@ h2 {
 .wrapper {
     display: grid;
     grid-gap: 1em;
-    grid-template-areas:
-        "navigation"
-        "page-title"
-        "masthead "
-        "main-content"
-        "sidebar"
-        "footer"
+    grid-template-areas: "navigation" "page-title" "masthead " "main-content" "sidebar" "footer"
 }
 
 #jsonTable {
     border-collapse: collapse;
 }
+
 #jsonTable table,
 #jsonTable th,
 #jsonTable td {
@@ -158,34 +160,51 @@ h2 {
 #jsonTable tr:nth-child(odd) {
     background: #fff;
 }
+
 .testimonial {
     font-style: italic;
     margin-bottom: 10px;
 }
+
 .testimonial img {
     max-width: 200px;
 }
+
 .regprice {
-    text-decoration:line-through;
-    color:red;
+    text-decoration: line-through;
+    color: red;
 }
+
 .saleprice {
-    font-weight:400;
+    font-weight: 400;
     font-size: 1.2 rem;
 }
+
+input,
+label,
+textarea {
+    width: 80%;
+    font-size: 1.25rem;
+    border-radius: 5px;
+}
+
+fieldset {
+    border: 0;
+}
+
+section a {
+    font-weight: bold;
+}
+
+
 @media only screen and (min-width: 768px) {
     .wrapper {
         grid-template-columns: 2fr 1fr;
-        grid-template-areas:
-            "page-title   masthead"
-            "main-content  navigation"
-            "main-content sidebar"
-            "main-content ."
-            "main-content footer";
+        grid-template-areas: "page-title   masthead" "main-content  navigation" "main-content sidebar" "main-content ." "main-content footer";
     }
 
     nav button,
-    nav h2{
+    nav h2 {
         display: none;
 
     }
@@ -210,13 +229,7 @@ h2 {
     .wrapper {
         grid-gap: 20px;
         grid-template-columns: 2fr 1fr 2fr;
-        grid-template-areas:
-            "page-title masthead navigation"
-            "main-content main-content sidebar"
-            "main-content main-content ."
-
-            "main-content main-content footer"
-
+        grid-template-areas: "page-title masthead navigation" "main-content main-content sidebar" "main-content main-content ." "main-content main-content footer"
     }
 
 }
