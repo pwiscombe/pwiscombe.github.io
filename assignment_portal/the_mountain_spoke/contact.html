@@ -38,7 +38,22 @@
         </div>
         <div class="box main-content">
             <h2>Contact Us</h2>
-            <picture><img src="images/mountain_spoke_shop.jpg"></picture>
+            <picture>
+                <!-- 16:9 crop -->
+                <source
+                        media="(min-width: 36em)"
+                        srcset="images/mountain_spoke_shop/mountain_spoke_shop_1920.jpg  1920w,
+                                images/mountain_spoke_shop/mountain_spoke_shop_960.jpg 960w,
+                                images/mountain_spoke_shop/mountain_spoke_shop_480.jpg  480w">
+                <!-- square crop -->
+                <source
+                        srcset="images/mountain_spoke_shop/mountain_spoke_shop_sq_822.jpg  822w,
+                                images/mountain_spoke_shop/mountain_spoke_shop_sq_640.jpg 640w,
+                                images/mountain_spoke_shop/mountain_spoke_shop_sq_320.jpg  320w">
+                <img
+                     src="images/mountain_spoke_shop/mountain_spoke_shop_960.jpg"
+                     alt="The Mountain Spoke - Bozeman Montana - Store Front">
+            </picture>
             <form>
 
                 <fieldset>
