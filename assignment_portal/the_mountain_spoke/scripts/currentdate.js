@@ -1,8 +1,8 @@
 var d = new Date();
-var daylist = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+var daylist = new Array("Sun.", "Mon.", "Tues.", "Wed.", "Thurs.", "Fri.", "Sat.");
 var weekday = daylist[d.getDay()];
 var day = d.getDate();
-var monthlist = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+var monthlist = new Array("Jan.", "Feb.", "Mar.", "Apr.", "May", "June", "July", "Aug.", "Sep.", "Oct.", "Nov.", "Dec.");
 var monthname = monthlist[d.getMonth()];
 var year = d.getFullYear();
 var fulldate = weekday + ", " + day + " " + monthname + " " + year;

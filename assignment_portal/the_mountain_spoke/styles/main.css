@@ -110,7 +110,7 @@ nav ul.hide {
     grid-area: footer;
     text-align: center;
     font-size: .8rem;
-    height: 6rem;
+    height: 8rem;
 }
 
 .wrapper {
@@ -190,13 +190,22 @@ fieldset {
 }
 
 form section{
-    color = #000;
+    color: #000;
 }
 
 section a {
     font-weight: 700;
 }
+#open_source_images{
+    font-style: italic;
+}
+.resources {
+    white-space: normal;
+    width: 80vw;
+    height: auto;
+    word-wrap: break-word;
 
+}
 @media only screen and (min-width:768px) {
     .wrapper {
         grid-template-columns: 2fr 1fr;
@@ -223,7 +232,12 @@ section a {
         border-radius: 5px;
         padding: .8rem 1rem;
         display: grid;
-        display: grid;
+    }
+    .resources {
+        white-space: normal;
+        width: 50vw;
+        height: auto;
+        word-wrap: break-word;
     }
 }
 
@@ -237,4 +251,5 @@ section a {
             "main-content main-content ."
             "main-content main-content footer";
     }
+
 }
