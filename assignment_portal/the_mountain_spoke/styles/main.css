@@ -107,7 +107,6 @@ nav ul.hide {
 
 .footer {
     grid-area: footer;
-    align-content: baseline;
     text-align: center;
     font-size: .8rem;
     height: 6rem;
@@ -176,7 +175,7 @@ h1 {
 
 .saleprice {
     font-weight: 400;
-    font-size: 1.2 rem;
+    font-size: 1.2rem;
 }
 
 input,label,textarea {
@@ -219,7 +218,6 @@ section a {
         border-radius: 5px;
         padding: .8rem 1rem;
         display: grid;
-        justify-items: center;
     }
 }
 
