@@ -2,37 +2,40 @@ body {
     margin: 40px;
     background-color: #f5f5f5;
     color: #000;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato',sans-serif;
+}
+
+.box,.masthead,.page-title {
+    border-bottom: .25rem solid #d71723;
+}
+
+.box,.box img {
+    border-radius: 5px;
 }
 
 .box {
-    border-radius: 5px;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #1D1D1B;
-    border-bottom: .25rem solid #D71723;
-
+    border: 1px solid #1d1d1b;
 }
 
 .box img {
     width: 100%;
-    border-radius: 5px;
-
 }
 
-.box a {
+.box a,nav ul li a {
     text-decoration: none;
     color: inherit;
+}
 
+.masthead,.page-title {
+    background-color: #1d1d1b;
 }
 
 .masthead {
-    grid-area: masthead;
-    background-color: #1D1D1B;
-    border-bottom: .25rem solid #D71723;
     min-width: 360px;
     display: inline-flex;
-
+    grid-area: masthead;
 }
 
 .masthead img {
@@ -43,8 +46,6 @@ body {
 .page-title {
     grid-area: page-title;
     color: #fff;
-    background-color: #1D1D1B;
-    border-bottom: .25rem solid #D71723;
 }
 
 .navigation {
@@ -54,9 +55,9 @@ body {
 nav button {
     margin: .2rem 2%;
     background-color: transparent;
-    border: none;
+    border: 0;
     font-size: 1.6rem;
-    color: #D71723;
+    color: #d71723;
 }
 
 nav {
@@ -77,25 +78,23 @@ nav ul {
 nav ul li a {
     display: flex;
     padding: .8rem 2%;
-    text-decoration: none;
     color: #000;
-    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    border-top: 1px solid rgba(0,0,0,.3);
 }
 
 nav ul li.active a {
-    color: #D71723;
-    box-shadow: inset 0 -5px 0 #D71723;
+    color: #d71723;
+    box-shadow: inset 0 -5px 0 #d71723;
 }
 
 nav ul li a:hover {
     color: #fff;
-    background-color: #D71723;
+    background-color: #d71723;
 }
 
 nav ul.hide {
     display: none;
 }
-
 
 .main-content {
     grid-area: main-content;
@@ -110,7 +109,7 @@ nav ul.hide {
     grid-area: footer;
     align-content: baseline;
     text-align: center;
-    font-size: 0.8rem;
+    font-size: .8rem;
     height: 6rem;
 }
 
@@ -119,39 +118,39 @@ nav ul.hide {
 }
 
 h1 {
-    font-family: 'Hammersmith One', sans-serif;
+    font-family: 'Hammersmith One',sans-serif;
     font-size: 2rem;
 }
 
-h2 {
-    font-family: 'Lato', sans-serif;
+.homelink,h2 {
+    font-family: 'Lato',sans-serif;
     font-weight: 700;
 }
 
 .homelink {
-    font-family: 'Lato', sans-serif;
     height: 4rem;
-    font-weight: 700;
     font-size: 1.1rem;
-
 }
 
 .wrapper {
     display: grid;
     grid-gap: 1em;
-    grid-template-areas: "navigation" "page-title" "masthead " "main-content" "sidebar" "footer"
+    grid-template-areas:
+        "navigation"
+        "page-title"
+        "masthead "
+        "main-content"
+        "sidebar"
+        "footer";
 }
 
 #jsonTable {
     border-collapse: collapse;
 }
 
-#jsonTable table,
-#jsonTable th,
-#jsonTable td {
-    border: 1px solid black;
+#jsonTable table,#jsonTable td,#jsonTable th {
+    border: 1px solid #000;
 }
-
 
 #jsonTable tr:nth-child(even) {
     background-color: #f5f5f5;
@@ -180,9 +179,7 @@ h2 {
     font-size: 1.2 rem;
 }
 
-input,
-label,
-textarea {
+input,label,textarea {
     width: 80%;
     font-size: 1.25rem;
     border-radius: 5px;
@@ -193,20 +190,22 @@ fieldset {
 }
 
 section a {
-    font-weight: bold;
+    font-weight: 700;
 }
 
-
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width:768px) {
     .wrapper {
         grid-template-columns: 2fr 1fr;
-        grid-template-areas: "page-title   masthead" "main-content  navigation" "main-content sidebar" "main-content ." "main-content footer";
+        grid-template-areas:
+            "page-title   masthead"
+            "main-content  navigation"
+            "main-content sidebar"
+            "main-content ."
+            "main-content footer";
     }
 
-    nav button,
-    nav h2 {
+    nav button,nav h2 {
         display: none;
-
     }
 
     nav ul.hide {
@@ -216,20 +215,22 @@ section a {
     }
 
     nav ul li a {
-        border: 1px solid rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(0,0,0,.3);
         border-radius: 5px;
         padding: .8rem 1rem;
         display: grid;
         justify-items: center;
-
     }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width:1200px) {
     .wrapper {
         grid-gap: 20px;
         grid-template-columns: 2fr 1fr 2fr;
-        grid-template-areas: "page-title masthead navigation" "main-content main-content sidebar" "main-content main-content ." "main-content main-content footer"
+        grid-template-areas:
+            "page-title masthead navigation"
+            "main-content main-content sidebar"
+            "main-content main-content ."
+            "main-content main-content footer";
     }
-
 }
